@@ -8,8 +8,12 @@ function App() {
     <>
     <div className="w-full h-screen p-5">
       <img src="images/subway_logo_white.png" alt="Subway Logo" />
-      <img src="images/Footlong_Cookie.png" alt="Footlong Cookie"
-        className="w-full h-auto"/>
+      {/*<img src="images/Footlong_Cookie.png" alt="Footlong Cookie"
+        className="w-full h-auto"/>*/}
+
+      <img src="public/images/SubwayCookieBitten.gif" alt="Footlong Cookie"
+              className="w-full h-auto"/>
+
       <h1>Subway - Agency Team 1</h1>
 
       <div className="button">
