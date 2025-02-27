@@ -11,7 +11,7 @@ function App() {
       {/*<img src="images/Footlong_Cookie.png" alt="Footlong Cookie"
         className="w-full h-auto"/>*/}
 
-      <img src="public/images/SubwayCookieBitten.gif" alt="Footlong Cookie"
+      <img src="images/SubwayCookieBittenwHint.gif" alt="Footlong Cookie"
               className="w-full h-auto"/>
 
       <h1>Subway - Agency Team 1</h1>
