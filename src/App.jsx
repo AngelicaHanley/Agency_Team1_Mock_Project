@@ -6,7 +6,8 @@ function App() {
 
   return (
     <>
-    <div className="w-full h-screen p-15">
+    <div className="w-full h-screen p-5">
+      <img src="images/subway_logo_white.png" alt="Subway Logo" />
       <img src="images/Footlong_Cookie.png" alt="Footlong Cookie"
         className="w-full h-auto"/>
       <h1>Subway - Agency Team 1</h1>
