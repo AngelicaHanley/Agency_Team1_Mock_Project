@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 :root {
   font-family: Helvetica, system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -15,11 +14,21 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-image: linear-gradient(to top, #9333ea, #f97316);
+  background: linear-gradient(to top, #58016A, #FFC40C);
+  font-family: 'Helvetica', Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  
+  position: relative;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -27,12 +36,39 @@ h1 {
   line-height: 1.1;
 }
 
-.royal-text{
-  color: #58016A;
+.not-baked-text {
+  color: #04622A;
+  font-size: 40px;
+  margin-bottom: 0.5rem;
 }
 
-.not-baked-text{
-  color: #04622A;
+.royal-text {
+  color: #58016A;
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.25rem;
+  margin-top: 20px;
+}
+
+.temple-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  margin-top: 1rem;
+}
+
+.temple-close-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  color: #FFD75B;
+  margin: 1rem 0;
+}
+
+.cookie-alter-ego {
+  margin: 1rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
 }
 
 button {
@@ -45,6 +81,8 @@ button {
   background-color: #ffffff;
   cursor: pointer;
   transition: border-color 0.25s;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover {
@@ -56,17 +94,21 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.orderButton, .send-to-friend{
+.orderButton, .send-to-friend {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
-.orderbtn, .friendSend {
-  font-family:'Montserrat', sans-serif;
-  font-size: 40px;
+.orderbtn, .friendSend, .personality-quiz {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
   font-weight: 700;
-  width: 464px;
+  margin: 0 auto;       /* Centers the button horizontally */
+  display: flex;        /* Keeps internal content aligned via flex */
+  justify-content: center; 
+  align-items: center;
+  width: 464px;         /* Keep your fixed width */
   height: 97px;
   border-radius: 10px;
   background-color: #113F24;
@@ -74,8 +116,6 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  font-weight: bold;
   color: white;
   text-align: center;
   cursor: pointer;
@@ -85,6 +125,76 @@ button:focus-visible {
   transition: all 0.3s ease-in-out;
 }
 
-.orderbtn:hover, .friendSend:hover {
+.orderbtn {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.friendSend {
+  margin-bottom: 20px;
+}
+
+.orderbtn:hover,
+.friendSend:hover,
+.personality-quiz:hover {
   background-color: #027D34;
+}
+
+.britney-thumbnail {
+  width: 900px; 
+  border: 6px solid transparent;
+  margin: 0 auto;       
+  display: flex;        
+  justify-content: center; 
+  align-items: center;
+  border-radius: 12px;
+  border-image: linear-gradient(45deg, #58016A, #FFC40C);
+  border-image-slice: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.open-sign {
+  margin: 0 auto;       
+  display: flex;      
+  justify-content: center; 
+  align-items: center;
+  filter: drop-shadow(0 0 10px #0f0);
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px #0f0);
+  }
+  50% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 15px #0f0);
+  }
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px #0f0);
+  }
+}
+
+.footer-sparkle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw; 
+  height: auto;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.sunshine-ray {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110vw;  
+  height: auto;
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: -1;    
 }
