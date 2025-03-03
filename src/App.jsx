@@ -15,8 +15,7 @@ function App() {
         alt="Footlong Cookie Animation"
       />
 
-      <h1 className = "royal-text"><em>royal excellence loading...</em>.</h1>
-      <h1 className="text-lg font-semibold mb-5">Subway - Agency Team 1</h1>
+      <h1 className = "royal-text"><em>royal excellence loading...</em></h1>
 
       <div className="flex flex-col md:flex-row gap-4">
         <CustomButton
