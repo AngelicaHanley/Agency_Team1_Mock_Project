@@ -12,6 +12,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -29,6 +34,8 @@ body {
   
   position: relative;
   overflow-x: hidden;
+
+  width: 100%;
 }
 
 h1 {
@@ -38,37 +45,38 @@ h1 {
 
 .not-baked-text {
   color: #04622A;
-  font-size: 40px;
   margin-bottom: 0.5rem;
+  font-size: clamp(30px, 4vw, 80px);
 }
 
 .royal-text {
   color: #58016A;
   font-weight: 900;
-  font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 0.25rem;
   margin-top: 20px;
+  font-size: clamp(30px, 4vw, 80px);
 }
 
 .temple-text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 100px;
   margin-top: 1rem;
+  font-size: clamp(30px, 12vw, 80px);
 }
 
 .temple-close-text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 100px;
   color: #FFD75B;
-  margin: 1rem 0;
+  font-size: clamp(30px, 10vw, 80px);
+  margin-top: 0rem;
+  margin-bottom: 1rem;
 }
 
 .cookie-alter-ego {
   margin: 1rem 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 60px;
+  font-size: clamp(23px, 5vw, 60px);
 }
 
 button {
@@ -102,17 +110,14 @@ button:focus-visible {
 
 .orderbtn, .friendSend, .personality-quiz {
   font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
   font-weight: 700;
   margin: 0 auto;       /* Centers the button horizontally */
   display: flex;        /* Keeps internal content aligned via flex */
   justify-content: center; 
   align-items: center;
-  width: 464px;         /* Keep your fixed width */
   height: 97px;
   border-radius: 10px;
   background-color: #113F24;
-  padding: 24px 109px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,6 +128,12 @@ button:focus-visible {
   border-image-source: linear-gradient(to right, #C69600, #FFE8A1, #C69600);
   border-image-slice: 1;
   transition: all 0.3s ease-in-out;
+
+  width: 80%;
+  font-size: clamp(20px, 4vw, 25px);
+  max-width: 464px;
+  padding: 10px 20px;
+
 }
 
 .orderbtn {
@@ -141,7 +152,6 @@ button:focus-visible {
 }
 
 .britney-thumbnail {
-  width: 900px; 
   border: 6px solid transparent;
   margin: 0 auto;       
   display: flex;        
@@ -151,6 +161,9 @@ button:focus-visible {
   border-image: linear-gradient(45deg, #58016A, #FFC40C);
   border-image-slice: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  width: 90%;
+  max-width: 900px;
 }
 
 .open-sign {
@@ -181,20 +194,26 @@ button:focus-visible {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100vw; 
   height: auto;
   opacity: 0.8;
   pointer-events: none;
   z-index: -1;
+  width: 100%
 }
 
 .sunshine-ray {
   position: absolute;
   top: 0;
   left: 0;
-  width: 110vw;  
   height: auto;
   opacity: 0.45;
   pointer-events: none;
-  z-index: -1;    
+  z-index: -1;  
+  
+  width: 100%
+}
+
+.subway-logo-bottom{
+  margin-top: 1rem; 
+  margin-bottom: 0rem; 
 }
